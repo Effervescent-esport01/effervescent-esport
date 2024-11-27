@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Funnel Sans', sans-serif;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 5%;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	z-index: 100;
+	margin: 0;
+}
+
+.logo {
+	font-size: 30px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.social-media {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 6px;
+	margin: 0 auto 0 50px;
+	margin-right: 10px;
+	transition: background .5s, border-color .5s;
+}
+
+.social-media a {
+    display: flex; 
+    width: 100%; 
+    height: 100%; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; 
+}
+
+.social-media a:hover {
+    background: #fff;
+    border-color: #444; 
+}
+
+.social-media a i { 
+    font-size: 20px;
+    color: #fff;
+    transition: color .5s; 
+}
+
+.social-media a:hover i {
+    color: #444; 
+}
+
+.navbar {
+	display: flex; 
+	justify-content: flex-end; 
+	flex-grow: 1;
+}
+
+.navbar a {
+	font-size: 18px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 30px;
+	text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+.slider .slide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.slide img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+.banner {
+	height: 100vh; 
+	width: 100%;
+	background-size: cover; 
+	background-position: center; 
+	position: relative; 
+	overflow: hidden;
+}
+
+.banner img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1; 
+}
+
+.section1 {
+	height: 50vh; 
+	background-color: #16166B; 
+	position: relative; 
+	margin-top: -25vh; 
+	z-index: 1; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	color: white; 
+	text-align: center; 
+}
+
+h1 {
+	margin: 0; 
+}
+
+.text1 {
+	position: absolute;
+	top: 45%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	background-color: #16166B;
+	border-radius: 10px;
+	color: #fff; 
+	font-size: 100px; 
+	text-align: center;
+	z-index: 2;
+}
+
+.container {
+	display: flex; 
+	align-items: center; 
+	justify-content: space-between; 
+	padding: 30px;
+	background-color: transparent; 
+}
+
+.text {
+	flex: 1; 
+	padding-left: 70px; 
+}
+
+.text h1 {
+	margin: 0; 
+	font-size: 2.5em; 
+}
+
+.text p {
+	font-size: 1.2em; 
+	line-height: 1.5; 
+}
+
+.image {
+	flex: 1; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
+
+.image img {
+	width: 380px;
+	height: 390px;
+	border: 2px solid #fff;
+	border-radius: 200px; 
+	background-color: #fff;
+}
+
+.tournaments {
+    text-align: center;
+	z-index: 2;
+}
+
+.tournaments h2 {
+    font-size: 2.5em; 
+    margin-bottom: 20px;
+    color: #ffffff; 
+}
+
+.table-container {
+    display: flex; /* Align table and image horizontally */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center; /* Center the entire container */
+    gap: 20px; /* Space between table and image */
+    margin-top: 20px; /* Add spacing above the container */
+}
+
+
+table {
+    width: 150%;
+    background-color: #16166B;
+    margin-bottom: 40px;  
+    border: 5px solid #ffffff;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    color: #ffffff; 
+    border: 5px solid #ffffff;  
+}
+
+tbody tr:nth-child(even) {
+    background-color: #16166B; 
+}
+
+tbody tr:hover {
+    background-color: #16166B; 
+}
+
+.table-image img {
+    width: 200px; /* Set the image size */
+    height: auto; /* Maintain aspect ratio */
+    border: 3px solid #ffffff; /* Add border to the image */
+    border-radius: 10px;
+	margin-left: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #16166B;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
