@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effervescent - Home</title>
     <link rel="stylesheet" href="styles.css">
-	<!--<link rel="javascript" href="java-index.js">-->
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -31,6 +30,12 @@
 			<h2>!Remember - This is just a school project!</h2>
 		</div>
 	</div>
+	
+	<div id="popup" class="popup">
+		We are pleased to present the results.!
+		<a href="blog.html" class="button">More details</a>
+		<button id="closeBtn">X</button>
+	</div>
 
    <section class="banner">
 		<div class="slider">
@@ -55,31 +60,8 @@
     <footer>
         <p>&copy; 2024 Effervescent. All rights reserved. <strong>(This is only a school project)</strong></p>
     </footer>
-	
-	  <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementById("closeModal");
-
-        // Automatically open the modal when the page loads
-        window.onload = function() {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+<script src="javascript_index.js"></script>
 	
 </body>
 </html>

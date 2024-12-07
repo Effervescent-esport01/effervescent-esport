@@ -22,7 +22,7 @@
 
 .logo {
 	font-size: 30px;
-	color: #ffffff;
+	color: #fff;
 	text-decoration: none;
 	font-weight: 700;
 }
@@ -72,7 +72,7 @@
 
 .navbar a {
 	font-size: 18px;
-	color: #ffffff;
+	color: #fff;
 	text-decoration: none;
 	font-weight: 500;
 	margin-left: 30px;
@@ -83,6 +83,7 @@
 	position: relative;
 	width: 100%;
 	height: 100vh;
+	overflow: hidden;
 }
 
 .slider .slide {
@@ -97,6 +98,8 @@
 	height: 100%;
 	object-fit: cover;
 	pointer-events: none;
+	overflow: hidden;
+	 display: block;
 }
 
 .banner {
@@ -105,7 +108,7 @@
 	background-size: cover; 
 	background-position: center; 
 	position: relative; 
-	overflow: hidden;
+	display: inline-block;
 }
 
 .banner img {
@@ -116,13 +119,14 @@
 	top: 0;
 	left: 0;
 	z-index: 1; 
+	dislpay:block;
 }
 
 .section1 {
-	height: 70vh; 
+	height: 130vh; 
 	background-color: #16166B; 
 	position: relative; 
-	margin-top: -25vh; 
+	margin-top: -70vh; 
 	z-index: 1; 
 	display: flex; 
 	align-items: center; 
@@ -135,19 +139,6 @@ h1 {
 	margin: 0; 
 }
 
-.text1 {
-	position: absolute;
-	top: 45%; 
-	left: 50%; 
-	transform: translate(-50%, -50%); 
-	background-color: #16166B;
-	border-radius: 10px;
-	color: #fff; 
-	font-size: 100px; 
-	text-align: center;
-	z-index: 2;
-}
-
 .container {
 	display: flex; 
 	align-items: center; 
@@ -155,7 +146,11 @@ h1 {
 	padding: 30px;
 	background-color: transparent; 
 }
-
+h2 {
+	font-size: 35px;
+	color: #DC143C;
+	padding-bottom: 20px;
+}
 .text {
 	flex: 1; 
 	padding-left: 70px; 
@@ -169,6 +164,7 @@ h1 {
 .text p {
 	font-size: 1.2em; 
 	line-height: 1.5; 
+	padding-bottom: 50px;
 }
 
 .image {
@@ -179,60 +175,11 @@ h1 {
 }
 
 .image img {
-	width: 380px;
-	height: 390px;
-	border: 2px solid #fff;
-	border-radius: 200px; 
-	background-color: #fff;
-}
-
-main {
-    padding: 20px;
-}
-
-.articles-container {
-	display: flex;
-	lex-wrap: wrap; /* Allow wrapping to the next line if needed */
-    justify-content: space-between; /* Space between articles */
-    gap: 20px;
-}
-
-article {
-    margin-bottom: 20px;
-    border: 5px solid #ddd;
-    padding: 15px;
-	flex: 1 1 calc(30% - 20px);
-}
-
-.article-image {
-    width: 40%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.article-image0 {
-    width: 60%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-
-article h2 {
-    color: #fff;
-}
-
-.date {
-    font-size: 0.9em;
-    color: #fff;
-}
-
-.read-more {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    background: #fff;
-    text-decoration: none;
-}
-
-.read-more:hover {
-    background: #555;
+	width: 70%;
+	height: auto;
+	border: 2px solid #8C92AC;
+	border-radius: 10px; 
+	background-color: #8C92AC;
 }
 
 footer {
