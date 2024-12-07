@@ -17,7 +17,7 @@ span.onclick = function() {
 
    setTimeout(function(){
 		   popup.style.display = "block"; // Show the popup after 5 seconds
-        }, 500);
+        }, 200);
 }
 
 // When the user clicks anywhere outside of the modal, close it and set a timer to show the popup
@@ -27,7 +27,7 @@ window.onclick = function(event) {
 
        setTimeout(function(){
 		   popup.style.display = "block"; // Show the popup after 5 seconds
-        }, 500);
+        }, 200);
     }
 }
 
