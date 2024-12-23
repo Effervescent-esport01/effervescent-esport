@@ -22,7 +22,7 @@
 
 .logo {
 	font-size: 30px;
-	color: #ffffff;
+	color: #fff;
 	text-decoration: none;
 	font-weight: 700;
 }
@@ -72,7 +72,7 @@
 
 .navbar a {
 	font-size: 18px;
-	color: #ffffff;
+	color: #fff;
 	text-decoration: none;
 	font-weight: 500;
 	margin-left: 30px;
@@ -83,6 +83,7 @@
 	position: relative;
 	width: 100%;
 	height: 100vh;
+	overflow: hidden;
 }
 
 .slider .slide {
@@ -97,6 +98,8 @@
 	height: 100%;
 	object-fit: cover;
 	pointer-events: none;
+	overflow: hidden;
+	 display: block;
 }
 
 .banner {
@@ -105,7 +108,7 @@
 	background-size: cover; 
 	background-position: center; 
 	position: relative; 
-	overflow: hidden;
+	display: inline-block;
 }
 
 .banner img {
@@ -116,13 +119,14 @@
 	top: 0;
 	left: 0;
 	z-index: 1; 
+	dislpay:block;
 }
 
 .section1 {
-	height: 50vh; 
+	height: 70vh; 
 	background-color: #16166B; 
 	position: relative; 
-	margin-top: -25vh; 
+	margin-top: -70vh; 
 	z-index: 1; 
 	display: flex; 
 	align-items: center; 
@@ -133,19 +137,6 @@
 
 h1 {
 	margin: 0; 
-}
-
-.text1 {
-	position: absolute;
-	top: 45%; 
-	left: 50%; 
-	transform: translate(-50%, -50%); 
-	background-color: #16166B;
-	border-radius: 10px;
-	color: #fff; 
-	font-size: 100px; 
-	text-align: center;
-	z-index: 2;
 }
 
 .container {
@@ -179,76 +170,11 @@ h1 {
 }
 
 .image img {
-	width: 380px;
-	height: 390px;
-	border: 2px solid #fff;
-	border-radius: 200px; 
-	background-color: #fff;
-}
-
-.tournaments {
-    text-align: center;
-	z-index: 2;
-}
-
-.tournaments h2 {
-    font-size: 2.5em; 
-    margin-bottom: 20px;
-    color: #ffffff; 
-}
-
-.table-container {
-    display: flex; /* Align table and image horizontally */
-    align-items: flex-start; /* Align items to the top */
-    justify-content: center; /* Center the entire container */
-    gap: 20px; /* Space between table and image */
-    margin-top: 20px; /* Add spacing above the container */
-}
-
-
-table {
-    width: 150%;
-    background-color: #16166B;
-    margin-bottom: 40px;  
-    border: 5px solid #ffffff;
-	border-collapse: collapse;
-	margin: 0 auto;
-}
-
-th, td {
-    padding: 15px;
-    text-align: left;
-    color: #ffffff; 
-    border: 5px solid #ffffff;	
-}
-
-tbody tr:nth-child(even) {
-    background-color: #16166B; 
-}
-
-tbody tr:hover {
-    background-color: #16166B; 
-}
-
-th {
-    text-align: left; /* Aligns header text to the left */
-}
-
-td {
-    text-align: center; /* Aligns cell text to the center */
-}
-
-/* Vertical alignment */
-td {
-    vertical-align: middle; /* Aligns cell text to the middle vertically */
-}
-
-.table-image img {
-    width: 200px; /* Set the image size */
-    height: auto; /* Maintain aspect ratio */
-    border: 3px solid #ffffff; /* Add border to the image */
-    border-radius: 10px;
-	margin-left: auto;
+	width: 400px;
+	height: 400px;
+	border: 2px solid #8C92AC;
+	border-radius: 20px; 
+	background-color: #8C92AC;
 }
 
 footer {
